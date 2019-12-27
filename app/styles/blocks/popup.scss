@@ -1,0 +1,149 @@
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 380px;
+    background-color: $white-color;
+    //border: 1px solid rgba($placeholder-color, .3);
+    border-radius: 8px;
+    overflow: hidden;
+    //box-shadow: 5px 3px 4px 2px $border-color;
+}
+
+// Header
+.popup__header {    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 13px 16px;
+    background-color: $active-color;
+    color: $white-color;
+
+    margin-bottom: 12px;
+}
+
+.popup__adresscontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 95%;
+}
+
+.popup__icon {
+    margin-right: 5px;
+}
+
+.popup__address {
+    width: 90%;
+
+    font-weight: $light;
+    font-size: 12px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.popup__close {
+    position: relative;
+    min-width: 16px;
+    height: 16px;
+    top: 5px;
+    z-index: 10;
+
+    &:before, &:after {
+        content:'';
+        position: absolute;    
+
+        width: 18px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: $white-color;
+    }
+    
+    &:before {
+        transform: rotate(45deg);// translate(-50%, -50%);
+    }
+    &:after {
+        transform: rotate(-45deg);// translate(-50%, -50%);
+    }
+
+    &:hover{
+        &:before, &:after {
+            background-color: $hover-color;
+            transition: background-color .4s;
+        }
+    }
+}
+
+// REVIEWS
+.popup__main {
+    padding: 0 16px;
+    padding-bottom: 15px;
+}
+
+.popup__reviews {
+    border-bottom: 1px solid $border-color;    
+
+    height: 137px;
+
+    overflow: auto;
+
+    padding-bottom: 24px;
+    margin-bottom: 12px;
+}
+
+.popup__text {
+    //min-height: 137px;
+}
+
+.popup__list-reviews {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.popup__item {
+    margin-bottom: 21px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.popup__info {
+    margin-bottom: 5px;
+}
+
+.popup__name, .popup__place, .popup__date {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: $regular;
+    margin-right: 5px;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.popup__place, .popup__date {
+    color: $placeholder-color;
+}
+
+.popup__place {
+    margin-right: 0;
+}
+
+.popup__name {
+    font-weight: $medium;
+    margin-right: 7px;
+}
+
+.popup__date {
+    margin-right: 0;
+}
+
+.popup__review {
+    font-size: 15px;
+    font-weight: $regular;
+}

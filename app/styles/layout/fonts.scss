@@ -1,0 +1,23 @@
+//@import url('https://fonts.googleapis.com/css?family=Courier+New:400');
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../../fonts/firasans-light-webfont.woff2') format('woff2'), url('../../fonts/firasans-light-webfont.woff') format('woff');
+    font-weight: $light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../../fonts/firasans-medium-webfont.woff2') format('woff2'), url('../../fonts/firasans-medium-webfont.woff') format('woff');
+    font-weight: $medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../../fonts/firasans-regular-webfont.woff2') format('woff2'), url('../../fonts/firasans-regular-webfont.woff') format('woff');
+    font-weight: $regular;
+    font-style: normal;
+}
+

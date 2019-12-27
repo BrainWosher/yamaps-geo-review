@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Геоотзыв</title>
+    <link rel="stylesheet" href="main.min.css">
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class="popup"></div>
+
+    <script id="popup-template" type="text/x-handlebars-template">
+        <div class="popup__container">
+            <div class="popup__header">
+                <div class="popup__adresscontainer">
+                    <div class="popup__icon">
+                        <i class="fas fa-map-marker-alt" style="font-size: 14px; color: white;"></i>
+                    </div>
+                    <div class="popup__address">{{address}}</div>
+                </div>
+                <a class="popup__close" href="#"></a>
+            </div>
+            <div class="popup__main">
+                <div class="popup__reviews">
+                    {{#if isFound}}
+                    <ul class="popup__list-reviews">
+                        {{#each items}}
+                        <li class="popup__item">
+                            <div class="popup__info">
+                                <div class="popup__name">{{name}}</div>
+                                <div class="popup__place">{{place}}</div>
+                                <div class="popup__date">{{date}}</div>
+                            </div>
+                            <div class="popup__review">{{review}}</div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    {{else}}
+                    <div class="popup__text">Отзывов пока нет...</div>
+                    {{/if}}
+                </div>
+                <div class="popup__form">
+                    <form class="form" name="formreview">
+                        <div class="form__content"><label class="form__label">Ваш отзыв</label>
+                            <div class="form__inputcontainer">
+                                <input class="form__input" type="text" name="reviewName" placeholder="Ваше имя">
+                                <input class="form__input" type="text" name="reviewPlace" placeholder="Укажите место">
+                                <textarea class="form__textarea" name="reviewImpressions" placeholder="Поделитесь впечатлениями"></textarea>
+                            </div>
+                            <button class="form__button" name="button" type="button">Добавить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8066e43a-c6e4-462b-aa8e-77c5f4b44a9d&lang=ru_RU" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="main.min.js" type="text/javascript"></script>
+</body>
+
+</html>

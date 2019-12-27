@@ -1,0 +1,43 @@
+{
+    "name": "geo-review",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "codestyle": "cross-env NODE_ENV=codestyle gulp codestyle",
+        "gulp": "cross-env NODE_ENV=dev gulp",
+        "build": "cross-env NODE_ENV=build gulp build"
+    },
+    "keywords": [],
+    "author": "Sergey Prokopenko <svprokopenko92@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "browser-sync": "^2.26.7",
+        "cross-env": "^5.2.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-group-css-media-queries": "^1.2.2",
+        "gulp-if": "^2.0.2",
+        "gulp-notify": "^3.2.0",
+        "gulp-pug": "^4.0.1",
+        "gulp-rm": "^2.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sass-glob": "^1.0.9",
+        "gulp-smile-px2rem": "^0.1.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-svg-sprite": "^1.5.0",
+        "gulp-svgo": "^2.1.1",
+        "gulp-uglify": "^3.0.2",
+        "gulp-wait2": "^0.0.5",
+        "node-sass": "^4.12.0"
+    },
+    "dependencies": {
+        "gulp-eslint": "^6.0.0",
+        "normalize.css": "^8.0.1"
+    }
+}

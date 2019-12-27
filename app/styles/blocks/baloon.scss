@@ -1,0 +1,22 @@
+.balloon {
+    font-size: 12px;
+}
+
+.balloon__header {
+    font-size: 12px;
+    font-weight: $regular;
+}
+
+.balloon__body {
+   
+}
+
+.balloon__review {
+    margin-top: 12px;
+}
+
+.balloon__footer {
+    text-align: right; 
+    color: $baloon-footer-color; 
+    margin-top: 85px;
+}

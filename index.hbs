@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ВП № 1</title>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="popup">
+    <div class="popup__container">
+      <div class="popup__header">
+        <div class="popup__icon"></div>
+        <div class="popup__address">Невский пр., 78, Санкт-Петербург</div>
+        <a href="#" class="popup__close">
+          <div class="popup__line"></div>
+          <div class="popup__line"></div>
+        </a>
+      </div>
+      <div class="popup__main">
+        <div class="popup__reviews">
+          <ul class="popup__reviews">
+            <li class="popup__item">
+              <div class="popup__name">svetlana</div>
+              <div class="popup__address--review">Шоколадница 13.12.2015</div>
+              <div class="popup__review"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="popup__form">
+          <form class="form" name="formreview">
+            <div class="form__content">
+              <label class="form__label">ВАШ ОТЗЫВ</label>
+              <input type="text" class="form__input" name="reviewName" placeholder="Ваше имя">
+              <input type="text" class="form__input" name="reviewplace" placeholder="Укажите место">
+              <textarea class="form__textarea" name="reviewImpressions" placeholder="Поделитесь впечатлениями"></textarea>
+              <button type="button" class="form__button">Добавить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8066e43a-c6e4-462b-aa8e-77c5f4b44a9d&lang=ru_RU" type="text/javascript"></script>
+</body>
+</html>

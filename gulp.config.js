@@ -1,0 +1,10 @@
+module.exports = {
+    SRC_PATH: "app",
+    DIST_PATH: "dist",
+    STYLES_LIBS: [
+        'node_modules/normalize.css/normalize.css'
+    ],
+    JS_LIBS: [
+
+    ]
+}

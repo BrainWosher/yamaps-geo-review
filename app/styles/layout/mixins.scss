@@ -1,0 +1,30 @@
+/* @mixin desktop() {
+    @media screen and (max-width: $bp-desktop) {
+        @content;
+    }
+}
+
+@mixin tablets() {
+    @media screen and (max-width: $bp-tablets), print {
+        @content;
+    }
+}
+
+@mixin tablets-small() {
+    @media screen and (max-width: $bp-tablets-small) {
+        @content;
+    }
+}
+
+@mixin phones() {
+    @media screen and (max-width: $bp-phones) {
+        @content;
+    }
+}
+
+@mixin phones-small() {
+    @media screen and (max-width: $bp-phones-small) {
+        @content;
+    }
+}
+ */

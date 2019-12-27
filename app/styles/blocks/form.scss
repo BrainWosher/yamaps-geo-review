@@ -1,0 +1,67 @@
+.form {
+    font-size: 15px;
+    margin-block-end: 0; // отступ вниз не нужен
+}
+
+.form__label, .form__input {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.form__input, .form__textarea {
+    outline: none;
+    font-weight: $regular;
+    color: $text-color;
+
+    width: 100%;
+    border:1px solid $border-color;
+    border-radius: 22px;
+
+    padding: 9px 12px;
+
+    transition: border-color .4s;
+
+    &::placeholder {
+        color: $placeholder-color;
+    }
+
+    &.fail {
+        border-color: $fail-color;
+    }
+}
+
+.form__label {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: $medium;
+    color: $active-color;
+}
+
+.form__inputcontainer {
+    margin-bottom: 12px;
+}
+
+.form__textarea {
+    resize: none;
+    height: 130px;
+}
+
+.form__button {
+    outline: none;
+    position: relative;
+    right: -75%;
+
+    background-color: $active-color;
+    border-radius: 11px;
+
+    font-size: 12px;
+    font-weight: $light;
+    color: $white-color;
+
+    padding: 8px 17px;
+
+    &:hover {
+        background-color: $hover-color;
+        transition: background-color .4s;
+    }
+}

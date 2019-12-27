@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+    font-family: 'FiraSans', Arial, sans-serif;
+    line-height: 1.41;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $text-color;
+
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button[type="button"] {
+    border: 0;
+    cursor: pointer;
+}
+
+
+
+
